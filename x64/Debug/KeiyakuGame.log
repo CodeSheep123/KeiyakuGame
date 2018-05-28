@@ -1,0 +1,11 @@
+﻿  FontManager.cpp
+  ImageManager.cpp
+  MusicManager.cpp
+  TextureManager.cpp
+  Global.cpp
+  KeiyakuGame.cpp
+  main.cpp
+  MainMenuState.cpp
+  SplashState.cpp
+  Generating Code...
+  KeiyakuGame.vcxproj -> C:\Users\michi_000\Desktop\Games\KeiyakuGame\x64\Debug\KeiyakuGame.exe

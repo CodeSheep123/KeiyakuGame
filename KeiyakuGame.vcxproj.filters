@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\depend">
+      <UniqueIdentifier>{33912d3d-f053-4938-9ebe-326621998257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\depend">
+      <UniqueIdentifier>{dc334845-517d-493b-844f-50ce3b2d3eb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\depend\tilemap">
+      <UniqueIdentifier>{315838c1-5be9-460f-bfef-a611df02a870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\depend\logpp">
+      <UniqueIdentifier>{24e36e35-c940-4f44-8f80-651ad470438e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\depend\logpp">
+      <UniqueIdentifier>{aae02194-ee5c-4365-ae78-4921a459c40f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\depend\tilemap">
+      <UniqueIdentifier>{8c49b4fe-cf99-4b52-bbfc-8b62bceb2517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utility">
+      <UniqueIdentifier>{54ee81a6-1784-44f9-9f4b-9fd701be5c7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utility">
+      <UniqueIdentifier>{922de634-67ba-4e29-b4a2-5f50b6daeae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\depend\resource_manager">
+      <UniqueIdentifier>{f3d4814c-0a1f-41e4-8fd4-5ffcf4097f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\depend\resource_manager">
+      <UniqueIdentifier>{3d8cf50b-71f3-4def-97b6-83a3fb7f0db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{14fbc2f8-a825-4633-8c80-6e090c4023ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{2bc34c6e-76ce-4a93-a153-29045af5b07b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game States">
+      <UniqueIdentifier>{0bbe6b19-4d99-4450-91d2-bfc5288b8b41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game States">
+      <UniqueIdentifier>{f0e71509-17aa-422d-a214-014fe2d2cd16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\tilemap\copy_transformable.cpp">
+      <Filter>Source Files\depend\tilemap</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\tilemap\Map.cpp">
+      <Filter>Source Files\depend\tilemap</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\tilemap\TileSet.cpp">
+      <Filter>Source Files\depend\tilemap</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\logpp\log++.cpp">
+      <Filter>Source Files\depend\logpp</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorHandler.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="KeybindManager.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\resource_manager\MemoryPool.cpp">
+      <Filter>Source Files\depend\resource_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\resource_manager\ImageManager.cpp">
+      <Filter>Source Files\depend\resource_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\resource_manager\TextureManager.cpp">
+      <Filter>Source Files\depend\resource_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\resource_manager\PathDatabase.cpp">
+      <Filter>Source Files\depend\resource_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="IGame.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="KeiyakuGame.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateManager.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashState.cpp">
+      <Filter>Source Files\Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\resource_manager\FontManager.cpp">
+      <Filter>Source Files\depend\resource_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\resource_manager\MusicManager.cpp">
+      <Filter>Source Files\depend\resource_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuState.cpp">
+      <Filter>Source Files\Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="depend\logpp\log++.hpp">
+      <Filter>Header Files\depend\logpp</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\tilemap\copy_transformable.hpp">
+      <Filter>Header Files\depend\tilemap</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorHandler.hpp">
+      <Filter>Header Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\logpp\rlutil.h">
+      <Filter>Header Files\depend\logpp</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\tilemap\TileSet.hpp">
+      <Filter>Header Files\depend\tilemap</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\tilemap\Map.hpp">
+      <Filter>Header Files\depend\tilemap</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyBindManager.hpp">
+      <Filter>Header Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions.hpp">
+      <Filter>Header Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\resource_manager\MemoryPool.hpp">
+      <Filter>Header Files\depend\resource_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\resource_manager\Resource.hpp">
+      <Filter>Header Files\depend\resource_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\resource_manager\ResourceManager.hpp">
+      <Filter>Header Files\depend\resource_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\resource_manager\ImageManager.hpp">
+      <Filter>Header Files\depend\resource_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\resource_manager\PathDatabase.hpp">
+      <Filter>Header Files\depend\resource_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\resource_manager\TextureManager.hpp">
+      <Filter>Header Files\depend\resource_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="IGame.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="KeiyakuGame.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateManager.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashState.hpp">
+      <Filter>Header Files\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\resource_manager\FontManager.hpp">
+      <Filter>Header Files\depend\resource_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\resource_manager\MusicManager.hpp">
+      <Filter>Header Files\depend\resource_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuState.hpp">
+      <Filter>Header Files\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.hpp">
+      <Filter>Header Files\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
