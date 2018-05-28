@@ -76,7 +76,7 @@ public:
 	{
 		if(myData != nullptr)
 		{
-			myData->DecRef();
+			myData->decRef();
 		}
 		myData = src.myData;
 		myData->incRef();

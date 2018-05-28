@@ -2,6 +2,7 @@
 #define KEIYAKU_SPLASH_STATE_HPP_
 
 #include "GameState.hpp"
+#include "depend/resource_manager/MusicManager.hpp"
 
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Text.hpp>
@@ -22,6 +23,8 @@ namespace Keiyaku
 		sf::Sprite m_background;
 		sf::Text m_titleText;
 		sf::Text m_pressSpaceText;
+
+		MusicResource m_backMusic;
 	};
 }
 

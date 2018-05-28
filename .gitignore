@@ -1,1 +1,4 @@
 *.wav
+*.log
+*.obj
+*.tlog

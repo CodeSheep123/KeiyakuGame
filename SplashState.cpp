@@ -15,6 +15,7 @@ namespace Keiyaku
 	{
 		/*Set title font, text and size*/
 		 
+		//#TemporaryArt
 		auto font = gFontManager->get(gPathDatabase->getPath("TEMP_title_font"));
 
 		m_titleText.setFont(*font);
@@ -41,13 +42,18 @@ namespace Keiyaku
 
 		m_pressSpaceText.setPosition(titlePos.x + xdiff / 2, titlePos.y + textSize.height + YOFFSET);
 
+		//#TemporaryArt
 		/*Set background*/
 		m_background.setTexture(*gTextureManager->get(gPathDatabase->getPath("TEMP_title_back")));
+
+		//#TemporaryArt
+		m_backMusic = gMusicManager->get(gPathDatabase->getPath("TEMP_background_music"));
+		m_backMusic->play();
 	}
 
 	void SplashState::onExit()
 	{
-
+		m_backMusic->stop();
 	}
 
 	void SplashState::update()

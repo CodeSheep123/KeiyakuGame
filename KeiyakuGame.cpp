@@ -1,5 +1,6 @@
 #include "KeiyakuGame.hpp"
 #include "SplashState.hpp"
+#include "MainMenuState.hpp"
 #include "Global.hpp"
 
 #include "depend/logpp/log++.hpp"
@@ -16,6 +17,8 @@ namespace Keiyaku
 	void KeiyakuGame::onStart()
 	{
 		m_pathDatabase.load("paths.pd");
+
+		m_stateManager.addState(std::make_shared<MainMenuState>());
 
 		//Add the first state: A splash screen
 		m_stateManager.addState(std::make_shared<SplashState>());
