@@ -1,4 +1,10 @@
+x64\Debug\KeiyakuGame.log
 *.wav
 *.log
 *.obj
+*.log
+*.idb
+*.pdb
 *.tlog
+x64/Debug/KeiyakuGame.log
+*.log
