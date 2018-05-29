@@ -25,6 +25,8 @@ namespace Keiyaku
 
 		m_titleText.setFont(*m_font);
 		m_titleText.setString("Keiyaku!");
+		//#TemporaryArt
+		m_titleText.setFillColor(sf::Color::Green);
 		
 		/*Position text*/
 		auto windowSize = gWindow->getSize();
@@ -49,5 +51,6 @@ namespace Keiyaku
 	void MainMenuState::draw()
 	{
 		gWindow->draw(m_background);
+		gWindow->draw(m_titleText);
 	}
 }
