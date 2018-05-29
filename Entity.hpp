@@ -23,9 +23,9 @@ namespace Keiyaku
 		virtual void draw() = 0;
 
 		/*Called when an object enters the scene*/
-		virtual void onSceneEnter() = 0;
+		virtual void onSceneEnter();
 		/*Called when an object exits the scene*/
-		virtual void onSceneExit() = 0;
+		virtual void onSceneExit();
 	private:
 		Scene* m_manager;
 	};

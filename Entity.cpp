@@ -30,4 +30,12 @@ namespace Keiyaku
 		m_manager->removeEntity(shared_from_this());
 	}
 
+	void Entity::onSceneEnter()
+	{
+	}
+
+	void Entity::onSceneExit()
+	{
+	}
+
 }
