@@ -25,4 +25,4 @@ namespace Keiyaku
 	};
 }
 
-#endif
+#endif                                                                                                                                                                                                                                                                                                                                                                                                                                     

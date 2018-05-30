@@ -5,9 +5,13 @@
 #include "depend/resource_manager/MusicManager.hpp"
 #include "depend/resource_manager/FontManager.hpp"
 
+#include "depend/ui/Button.hpp"
+
 #include <SFML\Graphics\Sprite.hpp>
 #include <SFML\Graphics\Text.hpp>
 
+
+#include <iostream>
 namespace Keiyaku
 {
 	class MainMenuState : public GameState
@@ -20,6 +24,11 @@ namespace Keiyaku
 
 		virtual void update() override;
 		virtual void draw() override;
+
+		inline void sayHi()
+		{
+			std::cout << "hi";
+		}
 	private:
 		/*Constants*/
 		static constexpr int TitleYOffset = -200;
@@ -32,6 +41,8 @@ namespace Keiyaku
 		/*Actual drawable objects*/
 		sf::Sprite m_background;
 		sf::Text m_titleText;
+
+		UI::Button m_startButton;
 	};
 }
 

@@ -10,6 +10,7 @@ namespace Keiyaku
 	void Scene::addEntity(std::shared_ptr<Entity> entity)
 	{
 		m_entities.push_back(entity);
+		entity->setScene(this);
 		entity->onSceneEnter();
 	}
 
@@ -23,17 +24,26 @@ namespace Keiyaku
 
 	void Scene::clear()
 	{
-		std::for_each(std::begin(m_entities), std::end(m_entities), [](std::shared_ptr<Entity> e) {e->onSceneExit(); });
+		for (auto& e : m_entities)
+		{
+			e->onSceneExit();
+		}
 		m_entities.clear();
 	}
 
 	void Scene::update()
 	{
-		std::for_each(std::begin(m_entities), std::end(m_entities), [](std::shared_ptr<Entity> e) {e->update(); });
+		for (auto& e : m_entities)
+		{
+			e->update();
+		}
 	}
 
 	void Scene::draw()
 	{
-		std::for_each(std::begin(m_entities), std::end(m_entities), [](std::shared_ptr<Entity> e) {e->draw(); });
+		for (auto& e : m_entities)
+		{
+			e->draw();
+		}
 	}
 }

@@ -51,6 +51,9 @@
     <Filter Include="Source Files\Game States">
       <UniqueIdentifier>{f0e71509-17aa-422d-a214-014fe2d2cd16}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{3d31714e-88eb-4654-a4d3-129b0b7b96d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -118,6 +121,15 @@
     </ClCompile>
     <ClCompile Include="depend\resource_manager\MusicManager.cpp">
       <Filter>Source Files\depend\resource_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\scene_manager\Scene.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="depend\ui\Button.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +204,15 @@
     </ClInclude>
     <ClInclude Include="depend\resource_manager\MusicManager.hpp">
       <Filter>Header Files\depend\resource_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\scene_manager\Scene.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="depend\ui\Button.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

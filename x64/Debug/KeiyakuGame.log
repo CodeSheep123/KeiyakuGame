@@ -1,2 +1,95 @@
-﻿  MainMenuState.cpp
-  KeiyakuGame.vcxproj -> C:\Users\michi_000\Desktop\Games\KeiyakuGame\x64\Debug\KeiyakuGame.exe
+﻿  Actions.cpp
+  log++.cpp
+  FontManager.cpp
+  ImageManager.cpp
+  MemoryPool.cpp
+  MusicManager.cpp
+  PathDatabase.cpp
+  TextureManager.cpp
+  Scene.cpp
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.hpp : warning C4821: Unable to determine Unicode encoding type, please save the file with signature (BOM)
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(8): error C2027: use of undefined type 'Keiyaku::Scene'
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\entity.hpp(8): note: see declaration of 'Keiyaku::Scene'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(8): error C2610: 'int Keiyaku::{ctor}(void)': is not a special member function which can be defaulted
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(10): error C2027: use of undefined type 'Keiyaku::Scene'
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\entity.hpp(8): note: see declaration of 'Keiyaku::Scene'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(12): error C2065: 'm_entities': undeclared identifier
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(12): error C2228: left of '.push_back' must have class/struct/union
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(12): note: type is 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(13): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(17): error C2027: use of undefined type 'Keiyaku::Scene'
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\entity.hpp(8): note: see declaration of 'Keiyaku::Scene'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(21): error C2065: 'm_entities': undeclared identifier
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(21): error C2228: left of '.erase' must have class/struct/union
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(21): note: type is 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(21): error C2228: left of '.begin' must have class/struct/union
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(21): note: type is 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(21): error C2228: left of '.end' must have class/struct/union
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(21): note: type is 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(22): error C2065: 'm_entities': undeclared identifier
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(22): error C2228: left of '.begin' must have class/struct/union
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(22): note: type is 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(22): error C2228: left of '.end' must have class/struct/union
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(22): note: type is 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(22): error C2672: 'std::find': no matching overloaded function found
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(22): error C2780: '_FwdIt std::find(_ExPo &&,_FwdIt,const _FwdIt,const _Ty &) noexcept': expects 4 arguments - 2 provided
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\xutility(3609): note: see declaration of 'std::find'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(22): error C2780: '_InIt std::find(_InIt,const _InIt,const _Ty &)': expects 3 arguments - 2 provided
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\xutility(3597): note: see declaration of 'std::find'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(25): error C2027: use of undefined type 'Keiyaku::Scene'
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\entity.hpp(8): note: see declaration of 'Keiyaku::Scene'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(27): error C2065: 'm_entities': undeclared identifier
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(28): error C3312: no callable 'begin' function found for type 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(28): error C3312: no callable 'end' function found for type 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(29): error C2065: 'e': undeclared identifier
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(29): error C2227: left of '->onSceneExit' must point to class/struct/union/generic type
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(29): note: type is 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(31): error C2065: 'm_entities': undeclared identifier
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(31): error C2228: left of '.clear' must have class/struct/union
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(31): note: type is 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(34): error C2027: use of undefined type 'Keiyaku::Scene'
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\entity.hpp(8): note: see declaration of 'Keiyaku::Scene'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(36): error C2065: 'm_entities': undeclared identifier
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(37): error C3312: no callable 'begin' function found for type 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(37): error C3312: no callable 'end' function found for type 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(38): error C2065: 'e': undeclared identifier
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(38): error C2227: left of '->update' must point to class/struct/union/generic type
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(38): note: type is 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(42): error C2027: use of undefined type 'Keiyaku::Scene'
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\entity.hpp(8): note: see declaration of 'Keiyaku::Scene'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(44): error C2065: 'm_entities': undeclared identifier
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(45): error C3312: no callable 'begin' function found for type 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(45): error C3312: no callable 'end' function found for type 'unknown-type'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(46): error C2065: 'e': undeclared identifier
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(46): error C2227: left of '->draw' must point to class/struct/union/generic type
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.cpp(46): note: type is 'unknown-type'
+  copy_transformable.cpp
+  Map.cpp
+  TileSet.cpp
+  Button.cpp
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\ui\button.cpp(16): error C2398: Element '1': conversion from 'unsigned int' to 'float' requires a narrowing conversion
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\ui\button.cpp(16): error C2398: Element '2': conversion from 'unsigned int' to 'float' requires a narrowing conversion
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\ui\button.cpp(16): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\ui\button.cpp(19): error C2398: Element '1': conversion from 'unsigned int' to 'float' requires a narrowing conversion
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\ui\button.cpp(19): error C2398: Element '2': conversion from 'unsigned int' to 'float' requires a narrowing conversion
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\ui\button.cpp(19): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+  Entity.cpp
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\depend\scene_manager\scene.hpp : warning C4821: Unable to determine Unicode encoding type, please save the file with signature (BOM)
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\entity.cpp(30): error C2027: use of undefined type 'Keiyaku::Scene'
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\entity.hpp(8): note: see declaration of 'Keiyaku::Scene'
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\entity.cpp(30): error C2227: left of '->removeEntity' must point to class/struct/union/generic type
+  ErrorHandler.cpp
+  GameState.cpp
+  GameStateManager.cpp
+  Global.cpp
+  IGame.cpp
+  KeiyakuGame.cpp
+  Generating Code...
+  Compiling...
+  KeybindManager.cpp
+  main.cpp
+  MainMenuState.cpp
+  SplashState.cpp
+  Utility.cpp
+  Generating Code...

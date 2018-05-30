@@ -34,6 +34,9 @@ namespace Keiyaku
 		m_titleText.setPosition((windowSize.x - titleSize.width) / 2 + TitleXOffset, 
 			(windowSize.y - titleSize.height) / 2 + TitleYOffset);
 
+		m_startButton.setString("Say Hi");
+		m_startButton.callback() = [this]() {sayHi(); };
+
 		m_backgroundMusic->play();
 	}
 
@@ -45,11 +48,13 @@ namespace Keiyaku
 
 	void MainMenuState::update()
 	{
-		
+		m_startButton.update();
 	}
 
 	void MainMenuState::draw()
 	{
+		m_startButton.draw();
+
 		gWindow->draw(m_background);
 		gWindow->draw(m_titleText);
 	}
