@@ -30,6 +30,11 @@ namespace Keiyaku
 		static constexpr int TitleYOffset = -200;
 		static constexpr int TitleXOffset = -100;
 
+		static constexpr int ButtonXOffset = 100;
+		static constexpr int StartButtonYOffset = -100;
+		static constexpr int CreditsButtonYOffset = -20;
+		static constexpr int QuitButtonYOffset = 60;
+
 		/*Resources*/
 		MusicResource m_backgroundMusic;
 		FontResource m_font;
@@ -39,6 +44,8 @@ namespace Keiyaku
 		sf::Text m_titleText;
 
 		UI::Button m_startButton;
+		UI::Button m_creditsButton;
+		UI::Button m_quitButton;
 	};
 }
 

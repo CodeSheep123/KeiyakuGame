@@ -76,6 +76,27 @@ namespace Keiyaku
 			}
 		}
 
+		void Button::setTextCentered(bool center)
+		{
+			if (center) centerText();
+			else unCenterText();
+		}
+
+		void Button::centerText()
+		{
+			static const int YOffset = -10; //small offset, because it will not accurately be centered otherwise
+
+			auto textSize = m_text.getLocalBounds();
+			auto x = m_bounds.left + (m_bounds.width - textSize.width) / 2;
+			auto y = m_bounds.top + (m_bounds.height - textSize.height) / 2 + YOffset;
+			m_text.setPosition(x, y);
+		}
+
+		void Button::unCenterText()
+		{
+			m_text.setPosition(m_bounds.left, m_bounds.top);
+		}
+
 		void Button::draw()
 		{
 			gWindow->draw(m_shape);

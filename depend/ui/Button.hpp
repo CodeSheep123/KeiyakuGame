@@ -29,6 +29,8 @@ namespace Keiyaku
 			void setString(std::string const& str);
 			void setFont(sf::Font const& font);
 
+			void setTextCentered(bool center);
+
 			sf::Text& getText();
 			sf::Text const& getText() const;
 
@@ -39,6 +41,10 @@ namespace Keiyaku
 			sf::Vector2f getPosition() const;
 
 			Callback& callback();
+		protected:
+			void centerText();
+			void unCenterText();
+
 		private:
 			sf::Text m_text;
 			sf::RectangleShape m_shape;

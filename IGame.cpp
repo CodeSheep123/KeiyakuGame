@@ -39,7 +39,8 @@ namespace Keiyaku
 			while (m_window.pollEvent(event))
 			{
 				if (event.type == sf::Event::Closed
-					|| (event.type == sf::Event::KeyPressed && event.key.code == m_keybinds.getKey(Action::Exit)))
+					|| (event.type == sf::Event::KeyPressed && event.key.code == m_keybinds.getKey(Action::Exit))
+					|| m_end)
 				{
 					/*Exit event received*/
 					m_window.close();
@@ -57,6 +58,8 @@ namespace Keiyaku
 		/*Game exits*/
 		onExit();
 	}
+
+	void IGame::end() { m_end = true; }
 
 	void IGame::onStart()
 	{

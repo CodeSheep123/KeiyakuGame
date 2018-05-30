@@ -30,6 +30,8 @@ namespace Keiyaku
 
 		void makeScreenshot() const;
 
+		void end();
+
 	protected:
 		virtual void onStart();
 		virtual void onExit();
@@ -39,6 +41,7 @@ namespace Keiyaku
 	private:
 		sf::RenderWindow m_window;
 		KeybindManager m_keybinds;
+		bool m_end = false;
 	};
 }
 

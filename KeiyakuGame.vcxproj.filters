@@ -134,6 +134,9 @@
     <ClCompile Include="depend\ui\Button.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
+    <ClCompile Include="CreditsState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="depend\logpp\log++.hpp">
@@ -216,6 +219,9 @@
     </ClInclude>
     <ClInclude Include="Entity.hpp">
       <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CreditsState.hpp">
+      <Filter>Header Files\Game States</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

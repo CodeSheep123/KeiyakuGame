@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actions.cpp" />
+    <ClCompile Include="CreditsState.cpp" />
     <ClCompile Include="depend\logpp\log++.cpp" />
     <ClCompile Include="depend\resource_manager\FontManager.cpp" />
     <ClCompile Include="depend\resource_manager\ImageManager.cpp" />
@@ -39,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actions.hpp" />
+    <ClInclude Include="CreditsState.hpp" />
     <ClInclude Include="depend\logpp\log++.hpp" />
     <ClInclude Include="depend\logpp\rlutil.h" />
     <ClInclude Include="depend\resource_manager\FontManager.hpp" />
