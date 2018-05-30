@@ -2,6 +2,9 @@
 #include <SFML\Window\Mouse.hpp>
 #include "../../Global.hpp"
 
+
+#include "../logpp/log++.hpp"
+
 namespace Keiyaku
 {
 	namespace UI
@@ -11,12 +14,22 @@ namespace Keiyaku
 			setString(text);
 			setFont(font);
 			callback() = cb;
+			m_bounds = m_shape.getGlobalBounds();
 		}
 		
-		void Button::setPosition(float width, float height) { m_shape.setPosition({ width, height }); }
+		void Button::setPosition(float x, float y) 
+		{ 
+			m_shape.setPosition({ x, y }); 
+			m_text.setPosition({ x, y });
+			m_bounds = m_shape.getGlobalBounds();
+		}
 		sf::Vector2f Button::getPosition() const { return m_shape.getPosition(); }
 
-		void Button::setSize(float width, float height) { m_shape.setSize({ width, height }); }
+		void Button::setSize(float width, float height) 
+		{ 
+			m_shape.setSize({ width, height });
+			m_bounds = m_shape.getGlobalBounds(); 
+		}
 		sf::Vector2f Button::getSize() const { return m_shape.getSize(); }
 
 		void Button::setString(std::string const& str)
@@ -44,11 +57,10 @@ namespace Keiyaku
 			return m_cb;
 		}
 
-
 		void Button::update()
 		{
-			//#TODO: Inside box check
-			if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
+			auto mousePos = sf::Mouse::getPosition(*gWindow);
+			if (sf::Mouse::isButtonPressed(sf::Mouse::Left) && m_bounds.contains((float)mousePos.x, (float)mousePos.y))
 			{
 				m_currentlyPressed = true;
 			}

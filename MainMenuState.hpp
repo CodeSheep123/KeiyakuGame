@@ -10,8 +10,6 @@
 #include <SFML\Graphics\Sprite.hpp>
 #include <SFML\Graphics\Text.hpp>
 
-
-#include <iostream>
 namespace Keiyaku
 {
 	class MainMenuState : public GameState
@@ -25,11 +23,9 @@ namespace Keiyaku
 		virtual void update() override;
 		virtual void draw() override;
 
-		inline void sayHi()
-		{
-			std::cout << "HI\n";
-		}
 	private:
+		void startGame();
+
 		/*Constants*/
 		static constexpr int TitleYOffset = -200;
 		static constexpr int TitleXOffset = -100;

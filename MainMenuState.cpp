@@ -34,8 +34,13 @@ namespace Keiyaku
 		m_titleText.setPosition((windowSize.x - titleSize.width) / 2 + TitleXOffset, 
 			(windowSize.y - titleSize.height) / 2 + TitleYOffset);
 
-		m_startButton.setString("Say Hi");
-		m_startButton.callback() = [this]() {sayHi(); };
+		//#TemporaryArt
+		m_startButton.setString("Start Game");
+		m_startButton.callback() = [this]() { startGame(); };
+		m_startButton.getText().setFont(*m_font);
+		m_startButton.setPosition(200, 200);
+		m_startButton.setSize(100, 100);
+		m_startButton.getText().setFillColor(sf::Color::Green);
 
 		m_backgroundMusic->play();
 	}
@@ -53,9 +58,14 @@ namespace Keiyaku
 
 	void MainMenuState::draw()
 	{
-		m_startButton.draw();
-
 		gWindow->draw(m_background);
 		gWindow->draw(m_titleText);
+
+		m_startButton.draw();
+	}
+
+	void MainMenuState::startGame()
+	{
+		logpp::Console::debug("Starting game");
 	}
 }

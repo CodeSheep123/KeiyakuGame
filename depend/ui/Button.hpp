@@ -35,13 +35,14 @@ namespace Keiyaku
 			void setSize(float width, float height);
 			sf::Vector2f getSize() const;
 
-			void setPosition(float width, float height);
+			void setPosition(float x, float y);
 			sf::Vector2f getPosition() const;
 
 			Callback& callback();
 		private:
 			sf::Text m_text;
 			sf::RectangleShape m_shape;
+			sf::Rect<float> m_bounds;
 
 			Callback m_cb;
 			bool m_currentlyPressed = false;

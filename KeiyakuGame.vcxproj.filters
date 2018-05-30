@@ -54,6 +54,9 @@
     <Filter Include="Header Files\UI">
       <UniqueIdentifier>{3d31714e-88eb-4654-a4d3-129b0b7b96d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{88c6b1f3-bc1c-4873-865c-6c31c772bd8d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -129,7 +132,7 @@
       <Filter>Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="depend\ui\Button.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
