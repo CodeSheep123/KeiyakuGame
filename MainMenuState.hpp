@@ -27,7 +27,7 @@ namespace Keiyaku
 
 		inline void sayHi()
 		{
-			std::cout << "hi";
+			std::cout << "HI\n";
 		}
 	private:
 		/*Constants*/

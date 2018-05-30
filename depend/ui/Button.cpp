@@ -13,10 +13,10 @@ namespace Keiyaku
 			callback() = cb;
 		}
 		
-		void Button::setPosition(unsigned width, unsigned height) { m_shape.setPosition({ width, height }); }
+		void Button::setPosition(float width, float height) { m_shape.setPosition({ width, height }); }
 		sf::Vector2f Button::getPosition() const { return m_shape.getPosition(); }
 
-		void Button::setSize(unsigned width, unsigned height) { m_shape.setSize({ width, height }); }
+		void Button::setSize(float width, float height) { m_shape.setSize({ width, height }); }
 		sf::Vector2f Button::getSize() const { return m_shape.getSize(); }
 
 		void Button::setString(std::string const& str)

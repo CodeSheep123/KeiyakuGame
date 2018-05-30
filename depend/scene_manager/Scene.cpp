@@ -18,8 +18,7 @@ namespace Keiyaku
 	{
 		/*Erase entity*/
 		entity->onSceneExit();
-		m_entities.erase(std::remove(m_entities.begin(), m_entities.end(),
-			std::find(m_entities.begin(), m_entities.end(), entity)));
+		m_entities.erase(std::find(m_entities.begin(), m_entities.end(), entity));
 	}
 
 	void Scene::clear()

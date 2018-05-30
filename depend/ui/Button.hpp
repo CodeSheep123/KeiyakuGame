@@ -32,10 +32,10 @@ namespace Keiyaku
 			sf::Text& getText();
 			sf::Text const& getText() const;
 
-			void setSize(unsigned width, unsigned height);
+			void setSize(float width, float height);
 			sf::Vector2f getSize() const;
 
-			void setPosition(unsigned width, unsigned height);
+			void setPosition(float width, float height);
 			sf::Vector2f getPosition() const;
 
 			Callback& callback();

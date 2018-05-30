@@ -2,6 +2,7 @@
 #define KEIYAKU_SCENE_HPP_
 
 #include <list>
+#include <memory>
 
 namespace Keiyaku
 {
