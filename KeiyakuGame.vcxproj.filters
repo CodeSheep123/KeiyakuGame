@@ -135,7 +135,7 @@
       <Filter>Source Files\UI</Filter>
     </ClCompile>
     <ClCompile Include="CreditsState.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Game States</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
