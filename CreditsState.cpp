@@ -66,8 +66,9 @@ namespace Keiyaku
 		Utility::setDefaultButtonStyle(m_backToMainButton);
 		m_backToMainButton.setString("Back");
 		m_backToMainButton.setSize(200, 50);
-		m_backToMainButton.setTextCentered(true);
 		Utility::centerButton(m_backToMainButton, gWindow, 0, BackButtonYOffset);
+		m_backToMainButton.setTextCentered(true);
+
 		/*Go back to main menu*/
 		m_backToMainButton.callback() = [this]() {getManager()->popState(std::make_shared<MainMenuState>()); };
 
