@@ -50,7 +50,6 @@ namespace Keiyaku
 		m_quitButton.setString("Quit");
 		m_quitButton.callback() = []() {gGame->end(); };
 		m_quitButton.getText().setFont(*m_font);
-		logpp::Console::debug(std::to_string(windowMid.x + ButtonXOffset) + std::to_string(windowMid.y + QuitButtonYOffset));
 		m_quitButton.setPosition(windowMid.x + ButtonXOffset, windowMid.y + QuitButtonYOffset);
 		m_quitButton.setSize(200, 50);
 		m_quitButton.getText().setFillColor(sf::Color::Green);
@@ -60,6 +59,11 @@ namespace Keiyaku
 		m_creditsButton.setString("Credits");
 		/*Go to next state: Credits state*/
 		m_creditsButton.callback() = [this]() {getManager()->popState(std::make_shared<CreditsState>()); };
+		m_creditsButton.setFont(*m_font);
+		m_creditsButton.setPosition(windowMid.x + ButtonXOffset, windowMid.y + CreditsButtonYOffset);
+		m_creditsButton.setSize(200, 50);
+		m_creditsButton.getText().setFillColor(sf::Color::Green);
+		m_creditsButton.setTextCentered(true);
 
 		m_backgroundMusic->play();
 	}
@@ -75,6 +79,7 @@ namespace Keiyaku
 	{
 		m_startButton.update();
 		m_quitButton.update();
+		m_creditsButton.update();
 	}
 
 	void MainMenuState::draw()
@@ -84,6 +89,7 @@ namespace Keiyaku
 
 		m_startButton.draw();
 		m_quitButton.draw();
+		m_creditsButton.draw();
 	}
 
 	void MainMenuState::startGame()
