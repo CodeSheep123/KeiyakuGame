@@ -15,6 +15,10 @@ namespace Keiyaku
 
 	void GameStateManager::addState(std::shared_ptr<GameState> state)
 	{
+		if (state == nullptr)
+		{
+			logpp::Console::error("GameStateManager::addState(): State is nullptr");	
+		}
 		m_states.push(state);
 		m_states.top()->setManager(this);
 //		m_states.top()->onStart();
