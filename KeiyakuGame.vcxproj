@@ -116,7 +116,7 @@
       <PreprocessorDefinitions>SFML_STATIC;KEIYAKU_DEBUG_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <AdditionalOptions>/we4061 /we4062 /we4191 /we4242 /we4263 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/we4061 /we4062 /we4191 /we4242 /we4263 /we4264 /we4265 /we6266 /we4302 /we4826 /we4905 /we4906 /we4928 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>openal32.lib;ogg.lib;flac.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;sfml-main-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;opengl32.lib;freetype.lib;jpeg.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -132,7 +132,7 @@
       <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <AdditionalOptions>/we4061 /we4062 /we4191 /we4242 /we4263 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/we4061 /we4062 /we4191 /we4242 /we4263 /we4264 /we4265 /we6266 /we4302 /we4826 /we4905 /we4906 /we4928 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
