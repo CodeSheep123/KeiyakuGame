@@ -1,4 +1,6 @@
 ﻿  Actions.cpp
+c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\actions.cpp(29): error C4062: enumerator 'Keiyaku::Action::Unknown' in switch of enum 'Keiyaku::Action' is not handled
+  c:\users\michi_000\desktop\games\keiyakugame\keiyakugame\actions.hpp(13): note: see declaration of 'Keiyaku::Action'
   CreditsState.cpp
   log++.cpp
   FontManager.cpp
@@ -27,4 +29,3 @@
   SplashState.cpp
   Utility.cpp
   Generating Code...
-  KeiyakuGame.vcxproj -> C:\Users\michi_000\Desktop\Games\KeiyakuGame\x64\Debug\KeiyakuGame.exe

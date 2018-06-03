@@ -26,6 +26,9 @@ namespace Keiyaku
 			break;
 		case Action::Screenshot:
 			return "Screenshot";
+
+		case Action::Unknown:
+			return "ACTION_UNKNOWN";
 		}
 
 		return "ACTION_UNKNOWN";
