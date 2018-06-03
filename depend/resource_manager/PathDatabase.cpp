@@ -49,9 +49,9 @@ namespace Keiyaku
 	{
 		std::ofstream out(path.data(), std::ofstream::out | std::ostream::trunc);
 
-		for (auto const&[id, path] : m_paths)
+		for (auto const&[id, data] : m_paths)
 		{
-			out << id << ' ' << path << '\n';
+			out << id << ' ' << data << '\n';
 		}
 	}
 }

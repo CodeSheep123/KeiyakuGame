@@ -46,7 +46,7 @@ void Map::skipToNextWithoutComment(std::istream& stream, char commentToken)
 {
 	static const int MAX_IGNORE = 32767;
 
-	char next = stream.peek();
+	auto next = stream.peek();
 
 	while (next == ' ' || next == '\n' || next == '\t') //first, skip all delimiters
 	{
@@ -66,7 +66,7 @@ bool Map::loadFromFile(std::string const& file, char commentToken)
 {
 	std::ifstream in { file };
 
-	return loadFromStream(in);
+	return loadFromStream(in, commentToken);
 
 }
 

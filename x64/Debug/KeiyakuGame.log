@@ -1,4 +1,30 @@
-﻿  CreditsState.cpp
-  KeiyakuGame.cpp
-  MainMenuState.cpp
+﻿  Actions.cpp
+  CreditsState.cpp
+  log++.cpp
+  FontManager.cpp
+  ImageManager.cpp
+  MemoryPool.cpp
+  MusicManager.cpp
+  PathDatabase.cpp
+  TextureManager.cpp
+  Scene.cpp
+  copy_transformable.cpp
+  Map.cpp
+  TileSet.cpp
+  Button.cpp
+  Entity.cpp
+  ErrorHandler.cpp
+  GameState.cpp
+  GameStateManager.cpp
+  Global.cpp
+  IGame.cpp
   Generating Code...
+  Compiling...
+  KeiyakuGame.cpp
+  KeybindManager.cpp
+  main.cpp
+  MainMenuState.cpp
+  SplashState.cpp
+  Utility.cpp
+  Generating Code...
+  KeiyakuGame.vcxproj -> C:\Users\michi_000\Desktop\Games\KeiyakuGame\x64\Debug\KeiyakuGame.exe

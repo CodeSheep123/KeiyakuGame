@@ -188,7 +188,7 @@ namespace logpp
 	{
 		try
 		{
-			open(fileName);
+			open(fileName, timestamp);
 		}
 		catch (TextFile::Exception e)
 		{

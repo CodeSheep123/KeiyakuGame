@@ -161,6 +161,7 @@ protected:
 	////////////////////////////////////////////////////////////////////////////////////
 	virtual bool unload(Type &resource, const Identifier &id)
 	{
+		(void)id; //fix warning C4100: 'id': unreferenced formal parameter
 		resource.~Type();
 		return true;
 	}
