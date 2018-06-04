@@ -29,6 +29,8 @@ namespace Keiyaku
 			void setString(std::string const& str);
 			void setFont(sf::Font const& font);
 
+			sf::FloatRect getLocalBounds() const;
+
 			void setTextCentered(bool center);
 
 			sf::Text& getText();
@@ -52,6 +54,7 @@ namespace Keiyaku
 
 			Callback m_cb;
 			bool m_currentlyPressed = false;
+			bool m_textCentered = false;
 		};
 	}
 }

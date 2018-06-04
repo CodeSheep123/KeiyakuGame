@@ -13,13 +13,10 @@ namespace Keiyaku::Utility
 		text.setFillColor(defaultColor);
 	}
 
+	//This function is kept for compatibility
 	void centerText(sf::Text& text, sf::Window* window, int xoffset /* = 0 */, int yoffset /* = 0 */)
 	{
-		auto windowSize = window->getSize();
-		auto windowMid = sf::Vector2u { windowSize.x / 2, windowSize.y / 2 };
-		auto textSize = text.getLocalBounds();
-		text.setPosition((windowSize.x - textSize.width) / 2 + xoffset,
-			(windowSize.y - textSize.height) / 2 + yoffset);
+		centerObject(text, window, xoffset, yoffset);
 	}
 
 	void setDefaultButtonStyle(UI::Button& button)
@@ -31,12 +28,9 @@ namespace Keiyaku::Utility
 		button.getText().setFillColor(defaultColor);
 	}
 
+	//This function is kept for compatibility
 	void centerButton(UI::Button& button, sf::Window* window, int xoffset /* = 0 */, int yoffset /* = 0 */)
 	{
-		auto windowSize = window->getSize();
-		auto windowMid = sf::Vector2u { windowSize.x / 2, windowSize.y / 2 };
-		auto buttonSize = button.getSize();
-		button.setPosition((windowSize.x - buttonSize.x) / 2 + xoffset,
-			(windowSize.y - buttonSize.y) / 2 + yoffset);
+		centerObject(button, window, xoffset, yoffset);
 	}
 }

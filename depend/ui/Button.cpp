@@ -20,8 +20,10 @@ namespace Keiyaku
 		void Button::setPosition(float x, float y) 
 		{ 
 			m_shape.setPosition({ x, y }); 
-			m_text.setPosition({ x, y });
 			m_bounds = m_shape.getGlobalBounds();
+
+			//re-center text
+			m_textCentered ? centerText() : unCenterText();
 		}
 		sf::Vector2f Button::getPosition() const { return m_shape.getPosition(); }
 
@@ -29,6 +31,10 @@ namespace Keiyaku
 		{ 
 			m_shape.setSize({ width, height });
 			m_bounds = m_shape.getGlobalBounds(); 
+
+			//re-center text
+			m_textCentered ? centerText() : unCenterText();
+
 		}
 		sf::Vector2f Button::getSize() const { return m_shape.getSize(); }
 
@@ -40,6 +46,11 @@ namespace Keiyaku
 		void Button::setFont(sf::Font const& font)
 		{
 			m_text.setFont(font);
+		}
+
+		sf::FloatRect Button::getLocalBounds() const
+		{
+			return m_shape.getLocalBounds();
 		}
 
 		sf::Text& Button::getText()
@@ -78,8 +89,9 @@ namespace Keiyaku
 
 		void Button::setTextCentered(bool center)
 		{
-			if (center) centerText();
-			else unCenterText();
+			m_textCentered = center;
+			
+			center ? centerText() : unCenterText();
 		}
 
 		void Button::centerText()
